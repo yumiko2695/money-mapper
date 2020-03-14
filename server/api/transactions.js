@@ -11,7 +11,7 @@ router.get('/:id', async (req, res, next) => {
         userId: req.params.id
       }
     })
-    res.send(transactions)
+    res.json(transactions)
   } catch (e) {
     console.log(e, 'error with your all transactions route')
     next(e)
